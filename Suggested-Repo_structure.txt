@@ -1,0 +1,11 @@
+nodejs-k8s-network-policy/
+|---Dockerfile
+|---app.js
+|---package.json
+|---k8s/
+|    |---my-app-deployment.yaml
+|    |---my-app-Service.yaml
+|    |---cache-deployment.yaml
+|    |---my-app-network-policy.yaml
+|
+|---README.md
