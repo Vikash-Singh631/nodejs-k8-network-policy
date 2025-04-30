@@ -1,0 +1,13 @@
+FROM node:18-alpine     	# Lightweight Node.js Image
+
+WORKDIR /app            	# Working directory inside container
+
+COPY package*.json ./   	# Copy Package json if available
+
+RUN npn install         	# Install app dependencies
+
+COPY . .                	# Copy rest of application code
+
+EXPOSE 3000             	# Expose port 3000
+
+CMD ["node", "app.js"]  	# Command to run the application
